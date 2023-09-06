@@ -1,0 +1,24 @@
+{
+  "name": "vitepress-demo",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "packageManager": "pnpm@8.7.1",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
+    "update:sidebar": "tsx ./scripts/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "1.0.0-rc.10",
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^18.11.9",
+    "fs-extra": "^10.1.0",
+    "tsx": "^3.11.0",
+    "typescript": "^4.8.4"
+  }
+}
