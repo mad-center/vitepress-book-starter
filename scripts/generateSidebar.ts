@@ -18,7 +18,8 @@ function extractRelativePath(fullPath: string, splitPoint: string): string {
 }
 
 function getTitle(content: string): string {
-  return <string>content.match(/^#(?!#)(.+)/)?.[1].trim()
+  // multiline /m is required
+  return <string>content.match(/^#(?!#)(.+)/m)?.[1].trim()
 }
 
 function extractSubFolder(relativePath: string): string {

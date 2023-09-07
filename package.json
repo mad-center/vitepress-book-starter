@@ -14,11 +14,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "1.0.0-rc.10",
+    "@types/markdown-it": "^12.2.3",
     "@types/fs-extra": "^9.0.13",
     "@types/node": "^18.11.9",
     "fs-extra": "^10.1.0",
+    "sass": "^1.66.1",
     "tsx": "^3.11.0",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "vitepress": "1.0.0-rc.10",
+    "markdown-it": "^13.0.1"
+  },
+  "dependencies": {
+    "viewerjs": "^1.11.3",
+    "vitepress-plugin-comment-with-giscus": "^1.1.7",
+    "vue": "^3.3.4"
   }
 }
