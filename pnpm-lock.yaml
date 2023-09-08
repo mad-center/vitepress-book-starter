@@ -5,12 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  clipboard:
-    specifier: ^2.0.6
-    version: registry.npmmirror.com/clipboard@2.0.11
-  viewerjs:
-    specifier: ^1.11.3
-    version: registry.npmmirror.com/viewerjs@1.11.5
   vue:
     specifier: ^3.3.4
     version: registry.npmmirror.com/vue@3.3.4
@@ -40,6 +34,9 @@ devDependencies:
   better-scroll:
     specifier: ^1.15.2
     version: registry.npmmirror.com/better-scroll@1.15.2
+  clipboard:
+    specifier: ^2.0.6
+    version: registry.npmmirror.com/clipboard@2.0.11
   fs-extra:
     specifier: ^10.1.0
     version: registry.npmmirror.com/fs-extra@10.1.0
@@ -64,6 +61,9 @@ devDependencies:
   typescript:
     specifier: ^4.8.4
     version: registry.npmmirror.com/typescript@4.9.5
+  viewerjs:
+    specifier: ^1.11.3
+    version: registry.npmmirror.com/viewerjs@1.11.5
   vite:
     specifier: ^4.4.9
     version: registry.npmmirror.com/vite@4.4.9(@types/node@18.17.14)(sass@1.66.1)
@@ -1104,7 +1104,7 @@ packages:
       good-listener: registry.npmmirror.com/good-listener@1.2.2
       select: registry.npmmirror.com/select@1.1.2
       tiny-emitter: registry.npmmirror.com/tiny-emitter@2.1.0
-    dev: false
+    dev: true
 
   registry.npmmirror.com/color-convert@1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/color-convert/-/color-convert-1.9.3.tgz}
@@ -1182,7 +1182,7 @@ packages:
     resolution: {integrity: sha512-IofjkYBZaZivn0V8nnsMJGBr4jVLxHDheKSW88PyxS5QC4Vo9ZbZVvhzlSxY87fVq3STR6r+4cGepyHkcWOQSw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/delegate/-/delegate-3.2.0.tgz}
     name: delegate
     version: 3.2.0
-    dev: false
+    dev: true
 
   registry.npmmirror.com/entities@3.0.1:
     resolution: {integrity: sha512-WiyBqoomrwMdFG1e0kqvASYfnlb0lp8M5o5Fw2OFq1hNZxxcNk8Ik0Xm7LxzBhuidnZB/UtBqVCgUz3kBOP51Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/entities/-/entities-3.0.1.tgz}
@@ -1483,7 +1483,7 @@ packages:
     version: 1.2.2
     dependencies:
       delegate: registry.npmmirror.com/delegate@3.2.0
-    dev: false
+    dev: true
 
   registry.npmmirror.com/gopd@1.0.1:
     resolution: {integrity: sha512-d65bNlIadxvpb/A2abVdlqKqV563juRnZ1Wtk6s1sIR8uNsXR70xqIzVqxVf1eTqDunwT2MkczEeaezCKTZhwA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/gopd/-/gopd-1.0.1.tgz}
@@ -2201,7 +2201,7 @@ packages:
     resolution: {integrity: sha512-OwpTSOfy6xSs1+pwcNrv0RBMOzI39Lp3qQKUTPVVPRjCdNa5JH/oPRiqsesIskK8TVgmRiHwO4KXlV2Li9dANA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/select/-/select-1.1.2.tgz}
     name: select
     version: 1.1.2
-    dev: false
+    dev: true
 
   registry.npmmirror.com/semver@5.7.2:
     resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/semver/-/semver-5.7.2.tgz}
@@ -2393,7 +2393,7 @@ packages:
     resolution: {integrity: sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz}
     name: tiny-emitter
     version: 2.1.0
-    dev: false
+    dev: true
 
   registry.npmmirror.com/to-fast-properties@2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/to-fast-properties/-/to-fast-properties-2.0.0.tgz}
@@ -2514,7 +2514,7 @@ packages:
     resolution: {integrity: sha512-nsvQkC5jnqZ/2ggFYWUH5gpUGPtFAYidsFh8Q7B7sioAdqJzSJrELvbu9ozUm0W+A2uHN5XuuiheHHB+dWiPEA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/viewerjs/-/viewerjs-1.11.5.tgz}
     name: viewerjs
     version: 1.11.5
-    dev: false
+    dev: true
 
   registry.npmmirror.com/vite@4.4.9(@types/node@18.17.14)(sass@1.66.1):
     resolution: {integrity: sha512-2mbUn2LlUmNASWwSCNSJ/EG2HuSRTnVNaydp6vMCm5VIqJsjMfbIWtbH2kDuwUVW5mMUKKZvGPX/rqeqVvv1XA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite/-/vite-4.4.9.tgz}
