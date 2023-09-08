@@ -1,5 +1,6 @@
 import {resolve} from 'node:path'
 import fs from 'fs-extra'
+import os from 'node:os'
 
 export const fetchBook = async () => {
 
@@ -9,7 +10,7 @@ export const fetchBook = async () => {
   )
 
   return bookInfo
-    .split('\r\n')
+    .split(os.EOL)
     .filter((item) => item.endsWith('.md'))
     .map((item) => resolve(process.cwd(), `./manuscript/${item}`))
 }

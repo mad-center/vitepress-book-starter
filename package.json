@@ -11,7 +11,8 @@
     "update": "npm-run-all -p update:*",
     "update:sidebar": "tsx ./scripts/sidebar/index.ts",
     "update:reading-time": "tsx ./scripts/reading-time/index.ts",
-    "build": "npm run update && npm run docs:build"
+    "build": "npm run update && npm run docs:build",
+    "test:fetchBook": "tsx ./scripts/common/fetchBook.spec.ts"
   },
   "keywords": [],
   "author": "",
