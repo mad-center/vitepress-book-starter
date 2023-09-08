@@ -8,8 +8,10 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
+    "update": "npm-run-all -p update:*",
     "update:sidebar": "tsx ./scripts/sidebar/index.ts",
-    "update:reading-time": "tsx ./scripts/reading-time/index.ts"
+    "update:reading-time": "tsx ./scripts/reading-time/index.ts",
+    "build": "npm run update && npm run docs:build"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +28,7 @@
     "fs-extra": "^10.1.0",
     "gray-matter": "^4.0.3",
     "markdown-it": "^13.0.1",
+    "npm-run-all": "^4.1.5",
     "reading-time": "^1.5.0",
     "sass": "^1.66.1",
     "tsx": "^3.11.0",

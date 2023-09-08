@@ -107,7 +107,7 @@ export async function generateSidebar() {
     )
   }
 
-  console.log(sidebar)
+  console.log("The sidebar json data has been exported.")
 
   return sidebar
 }

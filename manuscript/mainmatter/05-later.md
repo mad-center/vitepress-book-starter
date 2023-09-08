@@ -1,10 +1,10 @@
 ---
 readingTime: 4 min read
-words: 762
+words: 770
 ---
 # 05
 <!-- READING-TIME:START -->
->  🕛 reading time: 4 min read | 🔖 words: 762
+>  🕛 reading time: 4 min read | 🔖 words: 770
 <!-- READING-TIME:END -->
 
 这个镜头为：黑色渐变揭示，一个快速得环形旋转过渡，然后显示小娃娃。

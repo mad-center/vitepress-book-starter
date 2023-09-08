@@ -1,10 +1,10 @@
 ---
 readingTime: 3 min read
-words: 485
+words: 493
 ---
 # 《青空》部分文案
 <!-- READING-TIME:START -->
->  🕛 reading time: 3 min read | 🔖 words: 485
+>  🕛 reading time: 3 min read | 🔖 words: 493
 <!-- READING-TIME:END -->
 
 Linear Doge（线性减淡）：用于查看每个通道中的颜色信息，并通过增加亮度使基色变亮以反映混合色。与黑色混合不发生任何变化：

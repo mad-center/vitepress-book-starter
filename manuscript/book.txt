@@ -1,7 +1,3 @@
-{test}
-
-test/api-examples.md
-
 {frontmatter}
 
 frontmatter/00.md

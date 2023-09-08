@@ -1,4 +1,6 @@
-# vitepress demo
+# vitepress book starter
+
+> This repo can be used as a template project.
 
 ## init steps
 ```bash
@@ -27,6 +29,9 @@ pnpm dlx vitepress init
   - https://github.com/T-miracle/vitepress-plugin-comment-with-giscus
 - [x] add og:XXX property by `transformPageData(pageData)` hooks
 - [ ] deploy guide
+  - Build Command: `npm run build`
+  - Output Directory: `.vitepress/dist`
+  - Node Version: `18` (or above)
 - [x] music player support
   - https://www.npmjs.com/package/vitepress-plugin-awesome-musicplayer
     - doc: https://www.jsdelivr.com/package/npm/vitepress-plugin-awesome-musicplayer
