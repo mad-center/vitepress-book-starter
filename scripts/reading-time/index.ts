@@ -43,9 +43,9 @@ markdownFiles.forEach(filePath => {
 
   const mainContent = parsed.content;
   // injected readingTime block
-  const readingTimeBlock = `<!-- READING-TIME:START -->
+  const readingTimeBlock = `${startFlag}
 >  🕛 reading time: ${stats.text} | 🔖 words: ${stats.words}
-<!-- READING-TIME:END -->`
+${endFlag}`
 
   const regex = /^#(?!#)(.+)$/gm;
   const newMarkdownContent = mainContent.replaceAll(regex, (match, args) => {

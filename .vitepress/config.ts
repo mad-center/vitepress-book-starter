@@ -3,7 +3,6 @@ import {defineConfig} from 'vitepress'
 import sidebar from './sidebar.json'
 import {imageLinkPlugin} from "./plugins/print-image-links";
 import {printTitlesPlugin} from "./plugins/print-title";
-import {TransformContext} from "vitepress/dist/node";
 
 const DOC_ROOT_DIR = "manuscript"
 

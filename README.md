@@ -27,5 +27,16 @@ pnpm dlx vitepress init
   - https://github.com/T-miracle/vitepress-plugin-comment-with-giscus
 - [x] add og:XXX property by `transformPageData(pageData)` hooks
 - [ ] deploy guide
-- [ ] music support
+- [ ] music player support
   - https://www.npmjs.com/package/vitepress-plugin-awesome-musicplayer
+    - doc: https://www.jsdelivr.com/package/npm/vitepress-plugin-awesome-musicplayer
+    
+## issues record
+1. vitepress dev is ok but build failed
+```
+import useClipboard from "vue-clipboard3";
+         ^^^^^^^^^^^^
+  SyntaxError: The requested module 'vue-clipboard3' does not provide an export named 'default'
+      at ModuleJob._instantiate (node:internal/modules/esm/module_job:124:21)
+      at async ModuleJob.run (node:internal/modules/esm/module_job:190:5)
+```

@@ -2,15 +2,20 @@
 
 // import DefaultTheme from 'vitepress/theme';
 import DefaultTheme from 'vitepress/theme-without-fonts'
-
 import './custom.css'
+
+import {EnhanceAppContext, useData, useRoute} from 'vitepress';
+
 import 'viewerjs/dist/viewer.min.css';
 // Credit: modified from https://github.com/T-miracle/vitepress-plugin-image-viewer
 import imageViewer from '../plugins/image-viewer/viewer';
 // @ts-ignore
 import vImageViewer from '../plugins/image-viewer/vImageViewer.vue';
-import {EnhanceAppContext, useData, useRoute} from 'vitepress';
+
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
+
+// @ts-ignore
+import MusicPlayer from '../plugins/music-player'
 
 function setupImageViewer() {
   const route = useRoute();
@@ -44,6 +49,7 @@ export default {
     DefaultTheme.enhanceApp(ctx);
     // Register global components, if you don't want to use it, you don't need to add it
     // ctx.app.component('vImageViewer', vImageViewer);
+    ctx.app.component('MusicPlayer', MusicPlayer);
   },
   setup() {
     setupImageViewer();
