@@ -27,16 +27,19 @@ pnpm dlx vitepress init
   - https://github.com/T-miracle/vitepress-plugin-comment-with-giscus
 - [x] add og:XXX property by `transformPageData(pageData)` hooks
 - [ ] deploy guide
-- [ ] music player support
+- [x] music player support
   - https://www.npmjs.com/package/vitepress-plugin-awesome-musicplayer
     - doc: https://www.jsdelivr.com/package/npm/vitepress-plugin-awesome-musicplayer
+    - I temporarily disable `vue-clipboard3` due to compilation issue: `import useClipboard from "vue-clipboard3";`
     
 ## issues record
 1. vitepress dev is ok but build failed
-```
-import useClipboard from "vue-clipboard3";
-         ^^^^^^^^^^^^
-  SyntaxError: The requested module 'vue-clipboard3' does not provide an export named 'default'
-      at ModuleJob._instantiate (node:internal/modules/esm/module_job:124:21)
-      at async ModuleJob.run (node:internal/modules/esm/module_job:190:5)
+
+> BScroll.use() is not a function
+
+solution is to use ClientOnly mode:
+```html
+<ClientOnly>
+    <MusicPlayer musicId="687747" musicSrc="/687747.mp3" style="margin:0 auto" theme="candy"/>
+</ClientOnly>
 ```

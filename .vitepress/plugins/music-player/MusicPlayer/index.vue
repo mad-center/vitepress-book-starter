@@ -69,11 +69,15 @@ async function getSone() {
 }
 
 // 解决ios设备上无法播放问题
-const userAgent = navigator.userAgent
-const isIOS = !!userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)
-if (isIOS) {
-  const musicDom: HTMLAudioElement = document.getElementById('audio') as never
-  musicDom?.load()
+import { inBrowser } from 'vitepress'
+if (inBrowser) {
+  // you can call browser specific apis like navigator and window here
+  const userAgent = navigator.userAgent
+  const isIOS = !!userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)
+  if (isIOS) {
+    const musicDom: HTMLAudioElement = document.getElementById('audio') as never
+    musicDom?.load()
+  }
 }
 
 onMounted(() => {
