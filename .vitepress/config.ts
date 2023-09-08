@@ -30,7 +30,7 @@ export default defineConfig({
       provider: 'local'
     },
     editLink: {
-      pattern: `https://github.com/mad-center/vitepress-book-starter/edit/main/docs/${DOC_ROOT_DIR}/:path`
+      pattern: `https://github.com/mad-center/vitepress-book-starter/edit/main/${DOC_ROOT_DIR}/:path`
     },
     socialLinks: [
       {icon: 'github', link: 'https://github.com/mad-center/vitepress-book-starter'}
