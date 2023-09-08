@@ -36,11 +36,11 @@
     "typescript": "^4.8.4",
     "vite": "^4.4.9",
     "vitepress": "1.0.0-rc.10",
-    "vitepress-plugin-comment-with-giscus": "^1.1.7"
+    "vitepress-plugin-comment-with-giscus": "^1.1.7",
+    "clipboard": "^2.0.6",
+    "viewerjs": "^1.11.3"
   },
   "dependencies": {
-    "clipboard": "^2.0.6",
-    "viewerjs": "^1.11.3",
     "vue": "^3.3.4"
   }
 }
