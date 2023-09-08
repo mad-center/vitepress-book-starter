@@ -32,7 +32,6 @@
   },
   "dependencies": {
     "axios": "^1.2.0",
-    "vue-clipboard3": "^2.0.0",
     "@better-scroll/core": "^2.0.0-alpha.20",
     "@better-scroll/mouse-wheel": "^2.0.0-alpha.20",
     "@better-scroll/scroll-bar": "^2.0.0-alpha.20",

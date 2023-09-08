@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, toRaw, watch } from 'vue'
-// import useClipboard from 'vue-clipboard3'
+import useClipboard from './utils/vue-clipboard'
 import Scroller from './components/Scroller.vue'
 import Loading from './components/Loading.vue'
 import { audioTheme, formatTime } from './utils'
@@ -18,8 +18,10 @@ const props = defineProps({
   }
 })
 
+// console.log(useClipboard)
+
 const { currentSong, currentTime, playing, setCurrentTime, setPlayingState } = useMusic()
-// const { toClipboard } = useClipboard()
+const { toClipboard } = useClipboard()
 const WHEEL_TYPE = 'wheel'
 const SCROLL_TYPE = 'scroll'
 // 恢复自动滚动的定时器时间
@@ -296,8 +298,8 @@ function colorPick(gradient: any, arr: any) {
 }
 async function handleShare() {
   try {
-    // await toClipboard(window.location.href)
-    alert('TODO clipboard')
+    await toClipboard(window.location.href)
+    alert('当前页面链接复制成功')
   }
   catch (e) {
     alert('您的浏览器不支持复制：')
