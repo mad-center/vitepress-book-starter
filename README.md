@@ -36,6 +36,10 @@ pnpm dlx vitepress init
   - https://www.npmjs.com/package/vitepress-plugin-awesome-musicplayer
     - doc: https://www.jsdelivr.com/package/npm/vitepress-plugin-awesome-musicplayer
     - I temporarily disable `vue-clipboard3` due to compilation issue: `import useClipboard from "vue-clipboard3";`
+ 
+## todo improvements 
+  
+- [ ] reading-time plugin now updates original doc folder(./manunscript) **everytime**, it's not a good practice.
     
 ## issues record
 1. vitepress dev is ok but build failed
