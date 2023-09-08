@@ -1,4 +1,11 @@
+---
+readingTime: 1 min read
+words: 81
+---
 # BGM标记
+<!-- READING-TIME:START -->
+>  🕛 reading time: 1 min read | 🔖 words: 81
+<!-- READING-TIME:END -->
 
 04:08  01
 

@@ -1,4 +1,11 @@
+---
+readingTime: 1 min read
+words: 82
+---
 # 05 before
+<!-- READING-TIME:START -->
+>  🕛 reading time: 1 min read | 🔖 words: 82
+<!-- READING-TIME:END -->
 
 在做05之前，整理一下之前的01-04.
 

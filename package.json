@@ -8,21 +8,24 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "update:sidebar": "tsx ./scripts/index.ts"
+    "update:sidebar": "tsx ./scripts/sidebar/index.ts",
+    "update:reading-time": "tsx ./scripts/reading-time/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/markdown-it": "^12.2.3",
     "@types/fs-extra": "^9.0.13",
+    "@types/markdown-it": "^12.2.3",
     "@types/node": "^18.11.9",
     "fs-extra": "^10.1.0",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^13.0.1",
+    "reading-time": "^1.5.0",
     "sass": "^1.66.1",
     "tsx": "^3.11.0",
     "typescript": "^4.8.4",
-    "vitepress": "1.0.0-rc.10",
-    "markdown-it": "^13.0.1"
+    "vitepress": "1.0.0-rc.10"
   },
   "dependencies": {
     "viewerjs": "^1.11.3",

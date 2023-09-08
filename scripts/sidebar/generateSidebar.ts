@@ -1,4 +1,4 @@
-import {fetchBook} from './fetchBook'
+import {fetchBook} from '../common/fetchBook'
 import path from "path";
 import fs from "fs-extra"
 
@@ -30,7 +30,7 @@ function extractSubFolder(relativePath: string): string {
 }
 
 export async function generateSidebar() {
-  const bookList = await fetchBook()
+  const markdownList = await fetchBook()
 
   // 1. get title from every md file => use map<link,text>
 
@@ -44,10 +44,10 @@ export async function generateSidebar() {
   //   '\\appendix\\a-2-text.md' => '《青空》部分文案'
 
   const linkToTextMap: Map<string, string> = new Map();
-  for (let i = 0; i < bookList.length; i++) {
-    let content = await fs.readFile(bookList[i], 'utf-8')
+  for (let i = 0; i < markdownList.length; i++) {
+    let content = await fs.readFile(markdownList[i], 'utf-8')
     const title = getTitle(content)!
-    const relativePath = extractRelativePath(bookList[i], "manuscript");
+    const relativePath = extractRelativePath(markdownList[i], "manuscript");
     linkToTextMap.set(relativePath, title)
   }
   // 2. generate tree structure

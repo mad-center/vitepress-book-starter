@@ -1,8 +1,13 @@
 ---
 outline: deep
+readingTime: 1 min read
+words: 141
 ---
 
 # Runtime API Examples
+<!-- READING-TIME:START -->
+>  🕛 reading time: 1 min read | 🔖 words: 141
+<!-- READING-TIME:END -->
 
 >  {{ $frontmatter.outline }}
 

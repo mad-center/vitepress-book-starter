@@ -1,7 +1,9 @@
 import {defineConfig} from 'vitepress'
 
 import sidebar from './sidebar.json'
-import {imageLinkPlugin} from "./plugins/image-links/imageLink";
+import {imageLinkPlugin} from "./plugins/print-image-links";
+import {printTitlesPlugin} from "./plugins/print-title";
+import {TransformContext} from "vitepress/dist/node";
 
 const DOC_ROOT_DIR = "manuscript"
 
@@ -13,7 +15,7 @@ export default defineConfig({
   lastUpdated: true,
   markdown: {
     config: (md) => {
-      // md.use(imageLinkPlugin)
+      // md.use(printTitlesPlugin)
     },
   },
   themeConfig: {
@@ -62,5 +64,5 @@ export default defineConfig({
         href: "https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css"
       }
     ])
-  }
+  },
 })
